@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>windows phone 12.pptx</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url(background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: auto; /* 允许页面滚动 */
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            color: black;
+            font-size: 20px;
+        }
+
+        h1 {
+            opacity: 0;
+            animation: fade-in-title 2s ease 1s forwards;
+        }
+
+        .container {
+            opacity: 0;
+            animation: fade-in-container 2s ease 2s forwards;
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        .container p {
+            margin-top: 5px;
+            color: black;
+        }
+
+        .container a {
+            display: inline-block;
+            color: black;
+            text-decoration: underline;
+            margin-top: 5px;
+        }
+
+        @keyframes fade-in-title {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fade-in-container {
+            from {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>Windows phone 12</h1>
+    <h1>保君恭喜，正见宝藏。</h1>
+    <div class="container">
+        <div class="box">
+            <a href="#">
+                <img src="logo.contrast-white.png" alt="图片1">
+            </a>
+            <p>合理的设定</p>
+            <a href="https://2s44.github.io/beta.github/error_404">了解更多</a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="book.png" alt="图片2">
+            </a>
+            <p>重要的条款</p>
+            <a href="https://2s44.github.io/beta.github/error_404">了解更多</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
